@@ -10,6 +10,8 @@ import { SocialFeedComponent } from './social-feed/social-feed.component';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { CasesComponent } from './cases/cases.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GraphComponent,
     SocialFeedComponent,
     NewsFeedComponent,
-    CasesComponent
+    CasesComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
