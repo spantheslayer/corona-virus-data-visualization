@@ -9,6 +9,7 @@ import { GraphComponent } from './graph/graph.component';
 import { SocialFeedComponent } from './social-feed/social-feed.component';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { CasesComponent } from './cases/cases.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CasesComponent } from './cases/cases.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
