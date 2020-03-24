@@ -1,0 +1,43 @@
+.main-container {
+    display:grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 5vh 30vh 30vh 30vh 5vh;
+    text-align: center;
+    grid-gap: 3px 3px ;
+}
+app-header{
+    grid-row:1/1;
+    grid-column: 1/4;
+}
+app-map{
+    grid-row: 2/4;
+    grid-column: 2/2;
+    height:100%;
+}
+app-news-feed{
+    grid-row :2 / 2;
+    grid-column : 1 /1;
+    height: 100%;
+}
+app-social-feed{
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+    height: 100%;
+}
+app-cases{
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    height:100%;
+}
+app-graph{
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+app-country{
+    grid-column: 1/4;
+    grid-row : 4/4;
+}
+app-footer{
+    grid-row: 5/5;
+    grid-column: 1/4;
+}
