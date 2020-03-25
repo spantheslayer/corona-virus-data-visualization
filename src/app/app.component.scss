@@ -1,9 +1,10 @@
 .main-container {
+    box-sizing: border-box;
     display:grid;
     grid-template-columns: 20vw 60vw 20vw;
     grid-template-rows: 5vh 30vh 30vh 30vh 5vh;
     text-align: center;
-    grid-gap: 3px 3px ;
+    grid-gap: 4px 4px ;
 }
 app-header{
     grid-row:1/1;
