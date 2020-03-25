@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",
     "@angular/router": "~9.0.3",
+    "@angular/service-worker": "~9.0.3",
     "nan": "^2.14.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
