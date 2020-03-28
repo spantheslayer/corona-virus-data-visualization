@@ -12,7 +12,10 @@ import { CasesComponent } from './cases/cases.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule  } from '@angular/material/card';
+import {  MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { OverlayContainer, FullscreenOverlayContainer} from '@angular/cdk/overlay';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 @NgModule({
@@ -32,9 +35,11 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatDialogModule,
+    MatIconModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [{provide: OverlayContainer, useClass: FullscreenOverlayContainer}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
