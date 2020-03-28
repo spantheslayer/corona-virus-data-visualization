@@ -11,3 +11,10 @@ body {
 .mat-dialog-container-custom > mat-dialog-container {
   padding: 0;
 }
+#open {
+  position: absolute;
+  border: none;
+  background: transparent;
+  right: 0;
+  bottom: 0;
+}

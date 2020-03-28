@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule  } from '@angular/material/card';
 import {  MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 import { OverlayContainer, FullscreenOverlayContainer} from '@angular/cdk/overlay';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -35,6 +36,7 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     MatCardModule,
     MatDialogModule,
+    MatIconModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [{provide: OverlayContainer, useClass: FullscreenOverlayContainer}],
