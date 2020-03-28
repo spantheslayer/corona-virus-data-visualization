@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OverlayService } from '../overlay.service';
 
 @Component({
   selector: 'app-social-feed',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialFeedComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public overlay: OverlayService) { }
+  openDialog(): void {
+    const dialogRef = this.overlay.dialog.open(SocialFeedComponent, this.overlay.config);
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('this dialog was closed');
+    });
+  }
   ngOnInit(): void {
   }
 

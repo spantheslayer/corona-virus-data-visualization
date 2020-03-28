@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OverlayService } from '../overlay.service';
 
 @Component({
   selector: 'app-country',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryComponent implements OnInit {
 
-  constructor() { }
+  constructor(public overlay: OverlayService) { }
 
+  openDialog(): void {
+    const dialogRef = this.overlay.dialog.open(CountryComponent, this.overlay.config);
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('this dialog was closed');
+    });
+  }
   ngOnInit(): void {
   }
 

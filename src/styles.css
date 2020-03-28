@@ -8,3 +8,6 @@ body {
   background-color: lightslategray;
   padding: 0;
 }
+.mat-dialog-container-custom > mat-dialog-container {
+  padding: 0;
+}
